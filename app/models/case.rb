@@ -4,7 +4,7 @@ class Case < ActiveRecord::Base
 
   # @@total_approved = 0
   DISQUS_SHORTNAME = Rails.env == "development" ? "acacmanna-org".freeze : "acacmanna-org".freeze
-  DISQUS_URL = Rails.env == "development" ? "http://localhost:3000".freeze : "acacmanna.org".freeze
+  DISQUS_URL = Rails.env == "development" ? "http://localhost:3000".freeze : "http://acacmanna.org".freeze
 
   belongs_to :deacon, class_name: "User", foreign_key: "deacon_id"
   # commenting this out for testing purpose, enable after testing
